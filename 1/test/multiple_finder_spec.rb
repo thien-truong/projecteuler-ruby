@@ -8,6 +8,6 @@ describe MultipleFinder do
 
   it 'sums the multiples of 3 and 5 for a number' do
     multiple_finder = MultipleFinder.new
-    expect(multiple_finder.sum_multiples([3, 5, 6, 9])).to eq(23)
+    expect(multiple_finder.sum_multiples(10)).to eq(23)
   end
 end

@@ -14,7 +14,8 @@ class MultipleFinder
     return multiples.sort
   end
 
-  def sum_multiples(multiples)
+  def sum_multiples(number)
+    multiples = find_multiple(number)
     sum = 0
     index = 0
     while index < multiples.length
