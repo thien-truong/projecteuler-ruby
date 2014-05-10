@@ -1,4 +1,4 @@
-require_relative('../lib/multiple_finder')
+require_relative '../lib/multiple_finder'
 
 describe MultipleFinder do
   it 'finds multiples of 3 and 5 for a number' do
