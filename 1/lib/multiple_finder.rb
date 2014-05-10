@@ -1,21 +1,21 @@
 class MultipleFinder
-  def find_multiple(number)
+  def find_multiples_of_3_and_5(max_multiple)
     multiples = []
-    a = 3
-    b = 5
-    while a < number
-      multiples.push(a)
-      a = a + 3
+    multiple_of_3 = 3
+    multiple_of_5 = 5
+    while multiple_of_3 < max_multiple
+      multiples.push(multiple_of_3)
+      multiple_of_3 = multiple_of_3 + 3
     end
-    while b < number
-      multiples.push(b)
-      b = b + 5
+    while multiple_of_5 < max_multiple
+      multiples.push(multiple_of_5)
+      multiple_of_5 = multiple_of_5 + 5
     end
     multiples.sort
   end
 
-  def sum_multiples(number)
-    multiples = find_multiple(number)
+  def sum_multiples_of_3_and_5(max_multiple)
+    multiples = find_multiples_of_3_and_5(max_multiple)
     sum = 0
     index = 0
     while index < multiples.length
