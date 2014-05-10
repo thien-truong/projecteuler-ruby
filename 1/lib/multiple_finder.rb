@@ -16,12 +16,6 @@ class MultipleFinder
 
   def sum_multiples_of_3_and_5(max_multiple)
     multiples = find_multiples_of_3_and_5(max_multiple)
-    sum = 0
-    index = 0
-    while index < multiples.length
-      sum = sum + multiples[index]
-      index = index + 1
-    end
-    sum
+    multiples.reduce(0) { |sum, multiple| sum + multiple }
   end
 end
