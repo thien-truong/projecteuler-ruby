@@ -11,7 +11,7 @@ class MultipleFinder
       multiples.push(multiple_of_5)
       multiple_of_5 = multiple_of_5 + 5
     end
-    multiples.sort
+    multiples.sort.uniq
   end
 
   def sum_multiples_of_3_and_5(max_multiple)
