@@ -11,8 +11,9 @@ class MultipleFinder
       multiples.push(b)
       b = b + 5
     end
-    return multiples
+    return multiples.sort
   end
+
   def sum_multiples(multiples)
     sum = 0
     index = 0
