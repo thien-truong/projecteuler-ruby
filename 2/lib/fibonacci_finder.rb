@@ -5,11 +5,15 @@ class FibonacciFinder
     fibonacci_sequence = Array.new
     fibonacci_sequence.push(a).push(b)
     c = a + b
-    while (c) < limit
+    while c < limit
       fibonacci_sequence.push(c)
       a,b = b,c
       c = a + b
     end
     fibonacci_sequence
+  end
+
+  def sum_even_fibonacci(limit)
+    find_fibonacci(limit).select{ |number| number.even? }.reduce(:+)
   end
 end
