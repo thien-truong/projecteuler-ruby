@@ -4,12 +4,12 @@ class FibonacciFinder
     b = 2
     fibonacci_sequence = Array.new
     fibonacci_sequence.push(a).push(b)
-    while (a + b) < limit
-      c = a + b
-      a = b
-      b = c
+    c = a + b
+    while (c) < limit
       fibonacci_sequence.push(c)
+      a,b = b,c
+      c = a + b
     end
-    return fibonacci_sequence
+    fibonacci_sequence
   end
 end
