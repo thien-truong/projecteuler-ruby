@@ -13,6 +13,6 @@ describe LargestPalindromeProduct do
 
   it 'find the largest palindrome for the product made from 3-digit number' do
     largest_palindrome_product = LargestPalindromeProduct.new
-    largest_palindrome_product.find_largest_palindrome_product(100,999).should > 888888
+    largest_palindrome_product.find_largest_palindrome_product(100,999).should == 906609
   end
 end
