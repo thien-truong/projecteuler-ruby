@@ -1,13 +1,7 @@
-require 'Prime'
+require 'prime'
 
 class LargestPrimeFactor
   def find_largest_prime_factor(limit)
-    prime_factor = 0
-    (1..limit).each do |number|
-      if limit % number == 0 and Prime.prime?(number)
-        prime_factor = number
-      end
-    end
-    prime_factor
+    Prime.prime_division(limit).map { |it| it.first }.last
   end
 end
