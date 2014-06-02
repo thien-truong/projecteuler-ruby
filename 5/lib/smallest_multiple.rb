@@ -2,6 +2,7 @@ class SmallestMultiple
   def find_smallest_multiple(_begin, _end)
     divisor = _begin
     m = 1
+    multiple = 0
     until divisor == _end
       # smallest_multiple must be a multiple of _end
       multiple = _end * m
